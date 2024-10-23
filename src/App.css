@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+.hero-section {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow-x: auto;
+  background-color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.columns-container {
+  display: flex;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ticket-column {
+  flex: 0 0 300px;
+  margin: 10px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
   flex-direction: column;
+  width: 360px;
+  gap: 10px;
+}
+
+.ticket-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 360px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.ticket-card h4, .ticket-card p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.t1, .t2, .t3 {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.t3 {
+  justify-content: start;
+}
+
+.t2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.t2 .images {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.overfls {
+  flex-grow: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.images {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.ttag {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2px;
+  padding-bottom: 3px;
+  width: 150px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.goto {
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cols {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: baseline;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 30%;
+  gap: 5px;
+}
+
+.alpha {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mainnav {
+  width: 97%;
+  height: 50px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.dropdown-toggle-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-toggle-btn:hover {
+  background-color: #f0f0f0;
+  scale: 0.96;
+  transition-duration: 100ms;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color: aliceblue;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+  z-index: 1000;
+  width: 300px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group-by-selector, .sort-by-selector {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding-left: 20px;
+}
+
+.boxes {
+  border-radius: 5px;
+}
+
+.boxes2 {
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.sort-by-selector {
+}
+
+.dropdown-section {
+  color: darkgrey;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.overfls {
+  overflow: hidden;
 }
